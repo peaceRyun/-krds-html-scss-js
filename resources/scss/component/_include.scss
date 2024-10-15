@@ -1,3 +1,6 @@
 @import 'variables';
-@import 'mixins';
+
+@import 'mixins/utils';
+@import 'mixins/breakpoints';
+
 @import 'reset';
