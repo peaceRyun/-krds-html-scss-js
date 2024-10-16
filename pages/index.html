@@ -17,6 +17,10 @@
         <link rel="shortcut icon" href="http://www.mysite.com/favicon.ico" />
         <!-- css -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+        />
         <link rel="stylesheet" href="../resources/css/styles.css" />
         <!-- js -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -60,12 +64,14 @@
                                     />
                                 </picture>
                                 <div class="text-area">
-                                    <strong class="text-area__tit">슬라이드 제목</strong>
-                                    <p class="text-area__cont">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere mollitia
-                                        expedita ducimus dolores amet laboriosam!
-                                    </p>
-                                    <span href="#" class="text-area__goto text-area__goto--hidden">바로가기</span>
+                                    <div class="inner">
+                                        <strong class="text-area__tit">슬라이드 제목</strong>
+                                        <p class="text-area__cont">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere mollitia
+                                            expedita ducimus dolores amet laboriosam!
+                                        </p>
+                                        <span href="#" class="text-area__goto text-area__goto--hidden">바로가기</span>
+                                    </div>
                                 </div>
                             </a>
                         </div>
@@ -97,7 +103,43 @@
                     <!-- <div class="swiper-scrollbar"></div> -->
                 </div>
             </div>
-            <main id="container">content</main>
+            <main id="container">
+                <!-- 스튜디오 섹션 -->
+                <section class="sec-g sec-studio">
+                    <div class="inner">
+                        <h2 class="sec-g__tit">섹션 타이틀</h2>
+                        <div class="sec-g__cont">content</div>
+                        <a href="#" class="sec-g__more">더보기</a>
+                    </div>
+                </section>
+
+                <!-- 뉴스 섹션 -->
+                <section class="sec-g sec-news bg-gray">
+                    <div class="inner">
+                        <h2 class="sec-g__tit">섹션 타이틀</h2>
+                        <div class="sec-g__cont">content</div>
+                        <a href="#" class="sec-g__more">더보기</a>
+                    </div>
+                </section>
+
+                <!-- 스튜디오 섹션 -->
+                <section class="sec-g sec-studio">
+                    <div class="inner">
+                        <h2 class="sec-g__tit">섹션 타이틀</h2>
+                        <div class="sec-g__cont">content</div>
+                        <a href="#" class="sec-g__more">더보기</a>
+                    </div>
+                </section>
+
+                <!-- 뉴스 섹션 -->
+                <section class="sec-g sec-news bg-gray">
+                    <div class="inner">
+                        <h2 class="sec-g__tit">섹션 타이틀</h2>
+                        <div class="sec-g__cont">content</div>
+                        <a href="#" class="sec-g__more">더보기</a>
+                    </div>
+                </section>
+            </main>
             <footer id="footer">footer</footer>
         </div>
 

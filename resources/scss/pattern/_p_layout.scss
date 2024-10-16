@@ -1,5 +1,24 @@
 // 사이트 레이아웃 관련 요소
-// wrap
-// header
-// footer
-// aside
+.bg-gray {
+    background-color: $gray-5;
+}
+
+#container {
+    min-height: 100vh;
+}
+// grid layout
+.inner {
+    width: 100%;
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+#container {
+    padding-top: 100px;
+}
+
+// section layout
+.sec-g {
+    padding: 100px 0;
+}
