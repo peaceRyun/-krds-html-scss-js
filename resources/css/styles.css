@@ -3200,7 +3200,7 @@ input[type=checkbox] {
 }
 
 :root {
-  --swiper-theme-color: $primary;
+  --swiper-theme-color: red;
 }
 
 .swiper {
@@ -3309,4 +3309,10 @@ input[type=checkbox] {
   .slide-intro .swiper-button-next {
     display: none;
   }
+}
+.slide-studio {
+  overflow: visible;
+}
+.slide-studio .swiper-pagination {
+  bottom: -100px;
 }/*# sourceMappingURL=styles.css.map */

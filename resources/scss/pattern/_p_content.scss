@@ -5,7 +5,7 @@
 }
 
 :root {
-    --swiper-theme-color: $primary;
+    --swiper-theme-color: red;
 }
 
 // 전역 스타일
@@ -128,5 +128,12 @@
     .slide-intro .swiper-button-prev,
     .slide-intro .swiper-button-next {
         display: none;
+    }
+}
+
+.slide-studio {
+    overflow: visible;
+    .swiper-pagination {
+        bottom: -100px;
     }
 }
