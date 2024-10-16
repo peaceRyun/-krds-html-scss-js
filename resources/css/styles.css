@@ -3172,10 +3172,6 @@ input[type=checkbox] {
   background-color: #f8f8f8;
 }
 
-#container {
-  min-height: 100vh;
-}
-
 .inner {
   position: relative;
   width: 100%;
@@ -3249,9 +3245,10 @@ input[type=checkbox] {
 }
 .swiper .swiper-slide .text-area__tit {
   font-size: 3rem;
+  color: #1d1d1d;
 }
 .swiper .swiper-slide .text-area__cont {
-  color: #999;
+  color: #555555;
 }
 .swiper .swiper-slide .text-area__goto {
   display: inline-block;
@@ -3335,6 +3332,19 @@ input[type=checkbox] {
 }
 .slide-studio {
   overflow: visible;
+  width: 80%;
+  margin-left: 0;
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .slide-studio {
+    width: 90%;
+  }
+}
+@media (min-width: 1024px) {
+  .slide-studio {
+    width: 100%;
+    margin-left: auto;
+  }
 }
 .slide-studio .swiper-pagination {
   bottom: -100px;

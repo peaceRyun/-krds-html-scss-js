@@ -30,9 +30,10 @@
             // text-area__tit
             &__tit {
                 font-size: 3rem;
+                color: $gray-90;
             }
             &__cont {
-                color: #999;
+                color: $gray-70;
             }
             &__goto {
                 display: inline-block;
@@ -133,6 +134,15 @@
 
 .slide-studio {
     overflow: visible;
+    width: 80%;
+    margin-left: 0;
+    @include tablet {
+        width: 90%;
+    }
+    @include tabletMore {
+        width: 100%;
+        margin-left: auto;
+    }
     .swiper-pagination {
         bottom: -100px;
     }
