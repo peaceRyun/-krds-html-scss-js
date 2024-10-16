@@ -3184,11 +3184,14 @@ input[type=checkbox] {
 }
 
 #container {
-  padding-top: 100px;
+  padding-top: 6.25rem;
 }
 
 .sec-g {
-  padding: 100px 0;
+  padding: 10vw 0;
+}
+.sec-g__tit {
+  padding-bottom: 2.34375vw;
 }
 
 #skip-nav,

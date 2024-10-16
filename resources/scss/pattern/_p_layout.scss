@@ -15,10 +15,14 @@
 }
 
 #container {
-    padding-top: 100px;
+    padding-top: 6.25rem;
 }
 
 // section layout
 .sec-g {
-    padding: 100px 0;
+    padding: 10vw 0;
+    &__tit {
+        padding-bottom: 2.34375vw;
+        // font-size: 4.8rem;
+    }
 }
