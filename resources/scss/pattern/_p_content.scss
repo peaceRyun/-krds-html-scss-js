@@ -1,4 +1,8 @@
 // 사이트 컨텐츠 내용
+#skip-nav,
+#header {
+    display: none;
+}
 
 :root {
     --swiper-theme-color: red;
@@ -38,5 +42,8 @@
         img {
             height: 50vh;
         }
+    }
+
+    .swiper-pagination {
     }
 }

@@ -3168,6 +3168,11 @@ input[type=checkbox] {
   border-width: 2px;
 }
 
+#skip-nav,
+#header {
+  display: none;
+}
+
 :root {
   --swiper-theme-color: red;
 }
