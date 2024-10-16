@@ -3176,8 +3176,7 @@ input[type=checkbox] {
   width: 100%;
   height: 100%;
 }
-
-.swiper-slide {
+.swiper .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -3185,17 +3184,24 @@ input[type=checkbox] {
   justify-content: center;
   align-items: center;
 }
-
-.swiper-slide img {
+.swiper .swiper-slide img {
   display: block;
   width: 100%;
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-.swiper-slide a {
+.swiper .swiper-slide a {
   display: block;
   width: 100%;
   height: 100%;
+}
+
+#skip-nav,
+#header {
+  display: none;
+}
+
+.slide-intro swiper-slide img {
+  height: 50vh;
 }/*# sourceMappingURL=styles.css.map */
