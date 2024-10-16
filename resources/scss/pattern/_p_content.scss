@@ -123,12 +123,15 @@
         margin-top: 30px;
     }
 
-    .slide-intro .swiper-pagination {
-        display: block;
-    }
-    .slide-intro .swiper-button-prev,
-    .slide-intro .swiper-button-next {
-        display: none;
+    .slide-intro {
+        .swiper-pagination {
+            display: block;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: none;
+        }
     }
 }
 
