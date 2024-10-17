@@ -3297,8 +3297,8 @@ input[type=checkbox] {
 }
 #header #logo a {
   display: block;
-  width: 296px;
-  height: 44px;
+  width: 200px;
+  height: 35px;
   background: url(../../../resources/img/pattern/common/head-logo.png) no-repeat 0 0/contain;
 }
 #header #logo span {
@@ -3391,6 +3391,68 @@ input[type=checkbox] {
 .gnb__depth2 a:hover {
   font-weight: 700;
   color: #1d1d1d;
+}
+
+.util {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.util .lang {
+  position: relative;
+}
+.util .lang::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 1px;
+  background: #c6c6c6;
+}
+.util .lang__btn {
+  height: 57px;
+  margin-right: 10px;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.util .lang__btn::after {
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  content: "\f107";
+  margin-left: 5px;
+  color: #8e8e8e;
+}
+.util .lang__list {
+  display: block;
+  position: absolute;
+  top: 52px;
+  left: 0;
+  width: 90%;
+  text-align: center;
+  border: 1px solid #c6c6c6;
+  background: #fff;
+}
+.util .lang__list li {
+  padding: 5px 0;
+  text-transform: uppercase;
+}
+.util .lang__list li:first-child {
+  border-bottom: 1px solid #c6c6c6;
+}
+.util .search {
+  transform: scaleX(-1);
+}
+.util .search::before {
+  content: "\f002";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  font-size: 3.5rem;
+}
+.util .all-menu::before {
+  content: "\f0c9";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  font-size: 3.5rem;
 }
 
 :root {

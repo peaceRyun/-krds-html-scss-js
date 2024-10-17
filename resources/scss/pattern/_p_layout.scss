@@ -72,8 +72,7 @@
             right: $p-tablet;
         }
         &::after {
-            font-family: 'Line Awesome Free';
-            font-weight: 900;
+            @include lineAwesome;
             content: '\f061';
             display: flex;
             justify-content: center;
@@ -118,8 +117,8 @@
     #logo {
         a {
             display: block;
-            width: 296px;
-            height: 44px;
+            width: 200px;
+            height: 35px;
             background: url(../../../resources/img/pattern/common/head-logo.png) no-repeat 0 0 / contain;
         }
         span {
@@ -211,6 +210,68 @@
                 font-weight: $font-bold;
                 color: $gray-90;
             }
+        }
+    }
+}
+
+.util {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    .lang {
+        position: relative;
+        &::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 1px;
+            background: $gray-40;
+        }
+        &__btn {
+            height: 57px;
+            margin-right: 10px;
+            font-size: 2rem;
+            text-transform: uppercase;
+            &::after {
+                @include lineAwesome;
+                content: '\f107';
+                margin-left: 5px;
+                color: $gray-50;
+            }
+        }
+        &__list {
+            // display: none;
+            display: block;
+            position: absolute;
+            top: 52px;
+            left: 0;
+            width: 90%;
+            text-align: center;
+            border: 1px solid $gray-40;
+            background: $white;
+            li {
+                padding: 5px 0;
+                text-transform: uppercase;
+                &:first-child {
+                    border-bottom: 1px solid $gray-40;
+                }
+            }
+        }
+    }
+    .search {
+        transform: scaleX(-1);
+        &::before {
+            content: '\f002';
+            @include lineAwesome;
+            font-size: 3.5rem;
+        }
+    }
+    .all-menu {
+        &::before {
+            content: '\f0c9';
+            @include lineAwesome;
+            font-size: 3.5rem;
         }
     }
 }

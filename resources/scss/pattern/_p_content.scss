@@ -33,8 +33,7 @@
     }
     .swiper-button-next::before,
     .swiper-button-prev::before {
-        font-family: 'Line Awesome Free';
-        font-weight: 900;
+        @include lineAwesome;
         font-size: 3rem;
         color: $black;
         opacity: 0.5;
