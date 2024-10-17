@@ -13,9 +13,6 @@
     @include tablet {
         padding: 0 $p-tablet;
     }
-    @include tabletMore {
-        padding: 0 $p-tablet;
-    }
 }
 
 #skip-nav {
@@ -50,9 +47,7 @@
         }
     }
 }
-#container {
-    padding-top: 6.25rem;
-}
+
 // section layout
 .sec-g {
     padding: 10vw 0;
@@ -110,7 +105,7 @@
     .inner {
         display: flex;
         justify-content: space-between;
-        max-width: none;
+        // max-width: none;
         align-items: center;
     }
 
