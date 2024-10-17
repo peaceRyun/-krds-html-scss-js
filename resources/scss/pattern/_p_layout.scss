@@ -90,7 +90,16 @@
 #header {
     position: relative;
     z-index: 1000;
+    &.active {
+        &::before {
+            display: block;
+        }
+        .gnb__depth2 {
+            display: block;
+        }
+    }
     &::before {
+        display: none;
         content: '';
         height: 206px;
         background: $gray-5;
@@ -106,12 +115,12 @@
         align-items: center;
     }
 
-    .logo {
+    #logo {
         a {
             display: block;
-            width: 306px;
-            height: 54px;
-            background: url(../../../resources/img/pattern/common/head-logo.png) no-repeat 0 0;
+            width: 296px;
+            height: 44px;
+            background: url(../../../resources/img/pattern/common/head-logo.png) no-repeat 0 0 / contain;
         }
         span {
             @include sr-only;
@@ -121,6 +130,7 @@
 
 .gnb {
     position: relative;
+
     &__depth1 {
         display: flex;
         > li {
@@ -175,7 +185,7 @@
         }
     }
     &__depth2 {
-        // display: none;
+        display: none;
         position: absolute;
         top: 102px;
         left: 0;
@@ -199,6 +209,7 @@
             text-align: center;
             &:hover {
                 font-weight: $font-bold;
+                color: $gray-90;
             }
         }
     }

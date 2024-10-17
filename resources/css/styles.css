@@ -3273,7 +3273,14 @@ input[type=checkbox] {
   position: relative;
   z-index: 1000;
 }
+#header.active::before {
+  display: block;
+}
+#header.active .gnb__depth2 {
+  display: block;
+}
 #header::before {
+  display: none;
   content: "";
   height: 206px;
   background: #f8f8f8;
@@ -3288,13 +3295,13 @@ input[type=checkbox] {
   max-width: none;
   align-items: center;
 }
-#header .logo a {
+#header #logo a {
   display: block;
-  width: 306px;
-  height: 54px;
-  background: url(../../../resources/img/pattern/common/head-logo.png) no-repeat 0 0;
+  width: 296px;
+  height: 44px;
+  background: url(../../../resources/img/pattern/common/head-logo.png) no-repeat 0 0/contain;
 }
-#header .logo span {
+#header #logo span {
   position: absolute !important;
   width: 1px !important;
   height: 1px !important;
@@ -3357,6 +3364,7 @@ input[type=checkbox] {
   transition: all 0.3s;
 }
 .gnb__depth2 {
+  display: none;
   position: absolute;
   top: 102px;
   left: 0;
@@ -3382,6 +3390,7 @@ input[type=checkbox] {
 }
 .gnb__depth2 a:hover {
   font-weight: 700;
+  color: #1d1d1d;
 }
 
 :root {
