@@ -88,6 +88,17 @@
 
 // header
 #header {
+    position: relative;
+    z-index: 1000;
+    &::before {
+        content: '';
+        height: 206px;
+        background: $gray-5;
+        position: absolute;
+        top: 102px;
+        left: 0;
+        right: 0;
+    }
     .inner {
         display: flex;
         justify-content: space-between;
@@ -109,25 +120,86 @@
 }
 
 .gnb {
+    position: relative;
     &__depth1 {
         display: flex;
         > li {
             position: relative;
-            top: 0;
-            left: 0;
+            &:hover {
+                > a > span {
+                    color: $primary;
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+            &:first-child {
+                .gnb__depth2 {
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 1px;
+                        background: $gray-40;
+                    }
+                }
+            }
             > a {
-                display: block;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 height: 102px;
                 font-size: 2rem;
-                padding: 0 40px;
-                background: lightblue;
+                font-weight: $font-bold;
+                padding: 0 50px;
+                > span {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 0;
+                        height: 5px;
+                        background-color: $primary;
+                        transition: all 0.3s;
+                    }
+                }
             }
         }
     }
     &__depth2 {
         // display: none;
+        position: absolute;
+        top: 102px;
+        left: 0;
+        right: 0;
+        padding: 30px 0;
+        background: $gray-10;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 1px;
+            background: $gray-40;
+        }
+        a {
+            display: block;
+            font-size: 1.5rem;
+            color: $gray-70;
+            padding: 7px 0px;
+            text-align: center;
+            &:hover {
+                font-weight: $font-bold;
+            }
+        }
     }
 }
