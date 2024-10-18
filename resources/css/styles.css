@@ -3502,6 +3502,15 @@ input[type=checkbox] {
     padding: 30px;
   }
 }
+#nav-all .close::after {
+  content: "\f00d";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  font-size: 70px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 
 :root {
   --swiper-theme-color: red;
