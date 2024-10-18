@@ -3227,6 +3227,7 @@ input[type=checkbox] {
 }
 
 .sec-g {
+  overflow: hidden;
   padding: 10vw 0;
 }
 .sec-g__tit {
@@ -3265,20 +3266,21 @@ input[type=checkbox] {
   z-index: 1000;
 }
 #header.active::before {
-  display: block;
+  height: 206px;
 }
 #header.active .gnb__depth2 {
-  display: block;
+  height: 206px;
+  padding: 30px 0px;
 }
 #header::before {
-  display: none;
   content: "";
-  height: 206px;
+  height: 0px;
   background: #f8f8f8;
   position: absolute;
   top: 102px;
   left: 0;
   right: 0;
+  transition: all 0.3s;
 }
 #header .inner {
   display: flex;
@@ -3376,13 +3378,15 @@ input[type=checkbox] {
   transition: all 0.3s;
 }
 #gnb .gnb__depth2 {
-  display: none;
+  overflow: hidden;
   position: absolute;
   top: 102px;
   left: 0;
   right: 0;
-  padding: 30px 0;
+  padding: 0;
+  height: 0;
   background: #f0f0f0;
+  transition: all 0.3s;
 }
 #gnb .gnb__depth2:after {
   content: "";
