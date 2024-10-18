@@ -21,6 +21,12 @@
             rel="stylesheet"
             href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
         />
+        <link
+            rel="stylesheet"
+            as="style"
+            crossorigin
+            href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+        />
         <link rel="stylesheet" href="../resources/css/styles.css" />
         <!-- js -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -88,7 +94,8 @@
                         </ul>
                     </nav>
                     <div class="util">
-                        <div class="lang active">
+                        <!-- active 추가시 활성화 -->
+                        <div class="lang">
                             <button class="lang__btn">kor</button>
                             <ul class="lang__list">
                                 <li>kor</li>
@@ -99,7 +106,8 @@
                         <button class="all-menu"><span class="blind">전체메뉴</span></button>
                     </div>
                 </div>
-                <nav id="nav-all">
+                <!-- active 추가시 활성화 -->
+                <nav id="nav-all" class="">
                     <ul class="gnb__depth1">
                         <li>
                             <a href="#"><span>menu1</span></a>

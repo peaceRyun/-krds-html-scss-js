@@ -8,7 +8,7 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  font-family: "Pretendard GOV", sans-serif;
+  font-family: "Pretendard", sans-serif;
   color: var(--krds-gray-90);
   font-weight: 400;
   line-height: 1.5;
@@ -3220,7 +3220,7 @@ input[type=checkbox] {
   text-align: center;
 }
 #skip-nav.type1 {
-  background-color: var(--krds-white);
+  background-color: #fff;
 }
 #skip-nav.type1 a:focus {
   color: #1d1d1d;
@@ -3419,6 +3419,14 @@ input[type=checkbox] {
     display: block;
   }
 }
+.util .lang.active .lang__btn::after {
+  content: "\f106";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+}
+.util .lang.active .lang__lst {
+  display: block;
+}
 .util .lang::after {
   position: absolute;
   top: 0;
@@ -3441,14 +3449,14 @@ input[type=checkbox] {
   color: #8e8e8e;
 }
 .util .lang__list {
-  display: block;
+  display: none;
   position: absolute;
   top: 52px;
   left: 0;
   width: 90%;
-  text-align: center;
   border: 1px solid #c6c6c6;
   background: #fff;
+  text-align: center;
 }
 .util .lang__list li {
   padding: 5px 0;
@@ -3473,19 +3481,24 @@ input[type=checkbox] {
   font-size: 3.5rem;
 }
 
-#nav.all {
+#nav-all {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 100%;
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.9);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   padding: 20px;
+  transition: all 0.3s;
+}
+#nav-all.active {
+  display: block;
+  left: 0;
 }
 @media (min-width: 600px) and (max-width: 1023px) {
-  #nav.all {
+  #nav-all {
     padding: 30px;
   }
 }
@@ -3562,6 +3575,8 @@ input[type=checkbox] {
 .slide-intro .swiper-slide .text-area__tit {
   font-size: 3rem;
   color: #1d1d1d;
+  font-family: GmarketSansMedium;
+  font-weight: 500;
 }
 .slide-intro .swiper-slide .text-area__cont {
   color: #555555;
